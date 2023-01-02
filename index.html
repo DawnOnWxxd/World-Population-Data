@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="root" id="root">
+            <div class="top">
+                <div class="topchild">
+                    <p class="heading">World Population Calculator</p>
+                    <p class="heading2">Currently we have 263 Datasets</p>
+                </div>
+            </div>
+
+            <div class="mid">
+                <div class="midchild1">
+                    <p class="label">Top</p>
+                    <input class= "field" id="field" placeholder="No. of countries" type="text"/>
+                    <input checked name="pop" id= "most" type="radio"/>
+                    <label class= "label" for="most">Most Populated</label>
+                    <input name="pop" id= "least" type="radio"/>
+                    <label class= "label" for="least">Least Populated</label>
+                </div>
+                <div class="midchild2">
+                    <button onclick= initiate() class="button">Search</button>
+                </div>
+            </div>
+
+            <div id="parent" class="bottom"></div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
